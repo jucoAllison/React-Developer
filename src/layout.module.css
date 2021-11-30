@@ -1,0 +1,11 @@
+.layoutCover{
+    width: 100%;
+    display: flex;
+    /* overflow-x: hidden; */
+}
+
+.pageLayout{
+    width: 100%;
+    padding: 2em;
+    box-sizing: border-box;
+}

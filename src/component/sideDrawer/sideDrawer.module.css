@@ -1,0 +1,111 @@
+body .sideCover {
+  width: 300px;
+  height: 100vh;
+  flex-direction: column;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  border-right: 1px solid #ccc;
+  box-shadow: 0px 0px 3px #ccc;
+  position: fixed;
+    transform: translateX(-300px);
+  transition: 0.3s;
+  z-index: 100;
+    background-color: aliceblue;
+}
+
+.logoCover {
+  display: flex;
+  height: 100px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoCover img {
+  width: 70px;
+  height: 70px;
+}
+
+.logoCover h3 {
+  font-size: 30px;
+  font-family: "Birthstone", cursive;
+  color: #332a92;
+  letter-spacing: 3px;
+}
+
+.eachLinkCover {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.6em 1.5em 0.6em 4em;
+  /* padding: 2em; */
+}
+
+.eachLink {
+  padding: 0.6em 1.5em ;
+  box-sizing: border-box;
+  text-decoration: none;
+  margin-bottom: 10px;
+  color: #888;
+  font-size: 14px;
+  align-items: center;
+  font-weight: bold;
+  width: 100%;
+  box-sizing: border-box;
+  height: 40px;
+  border-radius: 5px;
+  margin-left: auto;
+  /* border-right: 1px solid #ccc;
+  box-shadow: 0px 0px 3px #ccc; */
+  display: flex;
+}
+.eachLinkSVG {
+  width: 20px;
+  fill: #888;
+  /* padding-right: 14px; */
+}
+
+.label{
+  margin-left: 14px;
+}
+
+
+.eachLink[aria-current="page"]{
+  color: #444444;
+  border-right: 1px solid #ccc;
+  box-shadow: 0px 0px 3px #ccc;
+}
+
+
+.eachLink[aria-current="page"] svg{
+  fill: #332a92;
+}
+.share{
+  color: #444444;
+  font-size: 14px;
+  text-align: center;
+}
+  
+
+body[class="open-side-bar"] .sideCover {
+  transform: translateX(0px);
+  transition: 0.3s;
+
+}
+
+@media(max-width: 990px){
+  .sideCover {
+    width: 250px;
+  }
+}
+
+
+@media(max-width: 800px){
+body .sideCover {
+    position: absolute;
+    transform: translateX(-300px);
+  transition: 0.3s;
+  z-index: 100;
+    background-color: aliceblue;
+  }
+}

@@ -1,0 +1,35 @@
+.cover {
+  width: 100%;
+  padding: 1em;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #ccc;
+}
+
+.imgCover {
+  width: 35px;
+  margin-right: 13px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.note {
+  color: #332a92;
+}
+.small {
+  color: #444444;
+}
+
+.noteCover {
+  font-size: 13px;
+  width: 100%;
+}
+
+.svgCover {
+  margin-left: 13px;
+  width: 32px;
+  fill: #ccc;
+}

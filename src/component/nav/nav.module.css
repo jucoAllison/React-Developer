@@ -1,0 +1,167 @@
+.navCover {
+  width: 100%;
+  display: flex;
+  height: 60px;
+  /* border: 1px solid; */
+  align-items: center;
+}
+
+.inputCover {
+  height: 60px;
+  display: flex;
+  background-color: #fff;
+  position: relative;
+  font-family: "PT Sans Caption", sans-serif;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0px 0px 24px #eee;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.profilCover {
+  height: 100%;
+  min-width: 130px;
+  margin-left: auto;
+  color: #332a92;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.svg {
+  fill: #332a92;
+  width: 30px;
+}
+.mainImg {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.objCover {
+  display: flex;
+}
+.searchInput {
+  width: 100%;
+  height: 100%;
+  border: none;
+  color: #888;
+  font-family: "PT Sans Caption", sans-serif;
+  font-size: 15px;
+  outline: none;
+  padding: 0px 9em 0px 5em;
+}
+
+.SearchSVG {
+  position: absolute;
+  left: 24px;
+  fill: #888;
+  display: none;
+  width: 32px;
+}
+.MenuSVG {
+  display: block;
+  position: absolute;
+  left: 24px;
+  cursor: pointer;
+  fill: #888;
+  width: 32px;
+}
+.searchBTN {
+  width: max-content;
+  padding: 0.6em 1.5em;
+  border: none;
+  position: absolute;
+  right: 20px;
+  font-family: "PT Sans Caption", sans-serif;
+  box-shadow: 0px 0px 2px #aaa;
+  border-radius: 4px;
+  outline: none;
+  background-color: #332a92;
+  color: #fff;
+}
+
+.bellCover {
+  width: 150px;
+  position: relative;
+  justify-content: center;
+  display: flex;
+}
+
+.NotificationCover {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  z-index: 20;
+  overflow: hidden;
+  top: 50px;
+  left: -20px;
+  background-color: #fff;
+  box-shadow: 0px 0px 2px #ddd;
+  border-radius: 4px;
+}
+
+.bellNot {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  box-shadow: 0px 0px 3px #ccc;
+  background-color: red;
+  font-size: 10px;
+  padding-top: 2px;
+  box-sizing: border-box;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  text-align: center;
+  width: 15px;
+  border-radius: 50%;
+  height: 15px;
+}
+
+.bellPointer {
+  width: 15px;
+  position: absolute;
+  top: 42px;
+  transform: rotate(45deg);
+  z-index: 21;
+  height: 15px;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  /* box-shadow: 3px 0px 3px #ccc; */
+  background-color: #fff;
+}
+
+@media (max-width: 930px) {
+  .navCover {
+    flex-direction: column;
+    height: auto;
+  }
+  .objCover {
+    justify-content: flex-end;
+    margin-top: 20px;
+    margin-left: auto;
+    display: flex;
+  }
+}
+
+@media (max-width: 800px) {
+  .MenuSVG {
+    display: block;
+  }
+  .SearchSVG {
+    display: none;
+  }
+  .navCover {
+    flex-direction: row;
+    height: auto;
+  }
+}
+
+@media (max-width: 655px) {
+  .navCover {
+    flex-direction: column;
+    height: auto;
+  }
+}
